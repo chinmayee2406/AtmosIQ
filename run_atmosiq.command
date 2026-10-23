@@ -36,4 +36,4 @@ export STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
 (sleep 2 && open "http://127.0.0.1:8501") &
 
 # Launch Streamlit with .venv python
-exec "$PROJECT_DIR/.venv/bin/streamlit" run "$PROJECT_DIR/app/main.py" --server.port 8501 --server.address 127.0.0.1
+exec "$PROJECT_DIR/.venv/bin/streamlit" run "$PROJECT_DIR/streamlit_app.py" --server.port 8501 --server.address 127.0.0.1

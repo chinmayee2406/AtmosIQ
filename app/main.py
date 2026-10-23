@@ -13,8 +13,10 @@ import os
 import sys
 from pathlib import Path
 
-# Add project root directory to Python path to ensure 'src' is always importable
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+# Ensure project root directory is on Python path
+PROJECT_ROOT = Path(__file__).resolve().parent
+if not (PROJECT_ROOT / "src").exists():
+    PROJECT_ROOT = PROJECT_ROOT.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
