@@ -27,6 +27,7 @@ echo "🚀 Starting Streamlit application on http://127.0.0.1:8501..."
 echo "------------------------------------------------------------"
 
 # Set non-intrusive environment variables
+export PYTHONPATH="$PROJECT_DIR:$PYTHONPATH"
 export MPLCONFIGDIR="/tmp"
 export STREAMLIT_SERVER_HEADLESS=true
 export STREAMLIT_BROWSER_GATHER_USAGE_STATS=false

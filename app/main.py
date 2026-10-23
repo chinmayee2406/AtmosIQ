@@ -10,6 +10,14 @@ Pages:
 """
 
 import os
+import sys
+from pathlib import Path
+
+# Add project root directory to Python path to ensure 'src' is always importable
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 import sqlite3
 import pandas as pd
 import numpy as np
@@ -68,9 +76,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-DB_PATH = "data/atmosiq.db"
-CLEAN_CSV_PATH = "data/processed/cleaned_weather.csv"
-RAW_CSV_PATH = "data/raw/weather_data.csv"
+DB_PATH = str(PROJECT_ROOT / "data" / "atmosiq.db")
+CLEAN_CSV_PATH = str(PROJECT_ROOT / "data" / "processed" / "cleaned_weather.csv")
+RAW_CSV_PATH = str(PROJECT_ROOT / "data" / "raw" / "weather_data.csv")
 
 
 @st.cache_data(ttl=600)
