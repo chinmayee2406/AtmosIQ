@@ -1,6 +1,6 @@
 """
 AtmosIQ - Climate Intelligence & Predictive Analytics
-Interactive Multi-Page Streamlit Dashboard
+Interactive Multi-Page Streamlit Dashboard 
 Pages:
 1. Climate Overview
 2. Climate Explorer
