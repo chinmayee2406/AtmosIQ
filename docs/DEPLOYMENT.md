@@ -1,4 +1,4 @@
-# AtmosIQ — Deployment and Cloud Publishing Guide
+# AtmosIQ — Deployment and Cloud Publishing Guide 
 
 This document describes how to deploy AtmosIQ to GitHub and Streamlit Community Cloud.
 
