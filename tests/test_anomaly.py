@@ -6,7 +6,7 @@ import unittest
 import pandas as pd
 import numpy as np
 from src.anomaly import (
-    compute_baseline_climatology,
+    compute_baseline_climatology, 
     detect_climate_anomalies,
     compute_annual_warming_stripes,
 )
