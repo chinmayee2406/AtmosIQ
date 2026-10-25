@@ -1,5 +1,5 @@
 """
-AtmosIQ - Climate Intelligence & Predictive Analytics
+AtmosIQ - Climate Intelligence & Predictive Analytics 
 Interactive Multi-Page Streamlit Dashboard
 Pages:
 1. Climate Overview
