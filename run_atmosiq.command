@@ -5,7 +5,7 @@
 # Double-click from Finder or execute from Terminal
 # ==============================================================================
 
-# Resolve the project root directory
+# Resolve the project root directory 
 PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd "$PROJECT_DIR" || exit 1
 
